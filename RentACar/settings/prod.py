@@ -7,7 +7,7 @@ SECRET_KEY = config('SECRET_KEY')
 
 DEBUG = False
 ALLOWED_HOST = [
-  'UNT_rentacar.herokuapp.com',
+  'rentacar.herokuapp.com',
 ]
 
 DEBUG_PROPAGATE_EXCEPTIONS = True

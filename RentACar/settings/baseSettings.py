@@ -19,8 +19,6 @@ from pathlib import Path
 BASE_DIR = Path(__file__).resolve().parent.parent.parent
 
 
-
-
 # Application definition
 
 INSTALLED_APPS = [
@@ -70,7 +68,8 @@ WSGI_APPLICATION = 'RentACar.wsgi.application'
 
 load_dotenv(find_dotenv())
 
-DATABASES = {'default': dj_database_url.config(default='qlite:///db.sqlite3', conn_max_age=600, ssl_require=False)}
+DATABASES = {'default': dj_database_url.config(
+    default='sqlite:///db.sqlite3', conn_max_age=600, ssl_require=False)}
 
 
 # Password validation
