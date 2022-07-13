@@ -1,1 +1,1 @@
-web: python manage.py migrate && gunicorn RentACar.wsgi
+web: gunicorn RentACar.wsgi --log-file -
